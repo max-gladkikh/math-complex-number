@@ -1,5 +1,4 @@
-<?php 
-declare(strict_types=1);
+<?php
 
 namespace ComplexMath\Tests;
 
@@ -57,7 +56,7 @@ final class ComplexNumber_division_Test extends TestCase
         }
     }
 
-    public function getComplexNumbersParams(): array
+    public function getComplexNumbersParams()
     {
         return [
             [
