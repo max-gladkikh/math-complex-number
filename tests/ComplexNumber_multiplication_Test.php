@@ -1,5 +1,4 @@
-<?php 
-declare(strict_types=1);
+<?php
 
 namespace ComplexMath\Tests;
 
@@ -48,7 +47,7 @@ final class ComplexNumber_multiplication_Test extends TestCase
         $this->assertEquals($resSecondMulFirst->getImaginary(), $resFirstMulSecond->getImaginary());
     }
 
-    public function getComplexNumbersParams(): array
+    public function getComplexNumbersParams()
     {
         return [
             [ // свойство нуля
