@@ -49,6 +49,7 @@ final class ComplexNumber_multiplication_Test extends TestCase
 
     /**
      * It's dataProvider
+     *
      * @return array[]
      */
     public function getComplexNumbersParams()

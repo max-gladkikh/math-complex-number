@@ -15,23 +15,33 @@ class ComplexNumber
     private $imaginary;
     
     /**
-     * Создаём комплексное число
+     * Комплексное число
      * 
      * @param string $real      - вещественная часть числа
      * @param string $imaginary - мнимая часть числа
      */
-    public function __construct(string $real, string $imaginary)
+    public function __construct($real, $imaginary)
     {
         $this->real = $real;
         $this->imaginary = $imaginary;
     }
-    
-    public function getReal():string
+
+    /**
+     * Метод возвращает вещественную часть числа
+     *
+     * @return string
+     */
+    public function getReal()
     {
         return $this->real;
     }
-    
-    public function getImaginary():string
+
+    /**
+     * Метод возвращает мнимую часть числа
+     *
+     * @return string
+     */
+    public function getImaginary()
     {
         return $this->imaginary;
     }
