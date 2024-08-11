@@ -22,7 +22,7 @@ class ComplexNumberCalculator
      * @param int $scale
      * @return ComplexNumber
      */
-    public function add(ComplexNumber $first, ComplexNumber $second, int $scale = 2): ComplexNumber
+    public function add(ComplexNumber $first, ComplexNumber $second, $scale = 2)
     {
         return new ComplexNumber(
             bcadd($first->getReal(), $second->getReal(), $scale),
@@ -38,7 +38,7 @@ class ComplexNumberCalculator
      * @param int $scale
      * @return ComplexNumber
      */
-    public function sub(ComplexNumber $first, ComplexNumber $second, int $scale = 2): ComplexNumber
+    public function sub(ComplexNumber $first, ComplexNumber $second, $scale = 2)
     {
         return new ComplexNumber(
             bcsub($first->getReal(), $second->getReal(), $scale),
@@ -60,7 +60,7 @@ class ComplexNumberCalculator
      * @param int $scale
      * @return ComplexNumber
      */
-    public function mul(ComplexNumber $first, ComplexNumber $second, int $scale = 2): ComplexNumber
+    public function mul(ComplexNumber $first, ComplexNumber $second, $scale = 2)
     {
         list($ac, $bd, $ad, $bc) = $this->getComplexNumberParams($first, $second, $scale);
         
@@ -91,7 +91,7 @@ class ComplexNumberCalculator
      * @return ComplexNumber
      * @throws DivisionByZeroException
      */
-    public function div(ComplexNumber $first, ComplexNumber $second, int $scale = 2): ComplexNumber
+    public function div(ComplexNumber $first, ComplexNumber $second, $scale = 2)
     {
         if ((float)$second->getReal() === 0.00 && (float)$second->getImaginary() === 0.00) {
             throw new DivisionByZeroException();
@@ -126,7 +126,7 @@ class ComplexNumberCalculator
      * @param int $scale
      * @return array
      */
-    private function getComplexNumberParams(ComplexNumber $first, ComplexNumber $second, int $scale = 2): array
+    private function getComplexNumberParams(ComplexNumber $first, ComplexNumber $second, $scale = 2)
     {
         $ac = bcmul($first->getReal(), $second->getReal(), $scale);
         $bd = bcmul($first->getImaginary(), $second->getImaginary(), $scale);
