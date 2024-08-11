@@ -20,7 +20,7 @@ final class ComplexNumber_addition_Test extends TestCase
     public function testAddComplexNumbers(
         array $firstComplexNumberParams,
         array $secondComplexNumberParams,
-        int $calculatingScale,
+        $calculatingScale,
         array $expectedResFirstAddSecond
     ) {
         $complexNumberCalculator = new ComplexNumberCalculator();
@@ -47,6 +47,10 @@ final class ComplexNumber_addition_Test extends TestCase
         $this->assertEquals($resSecondAddFirst->getImaginary(), $resFirstAddSecond->getImaginary());
     }
 
+    /**
+     * It's dataProvider
+     * @return array[]
+     */
     public function getComplexNumbersParams()
     {
         return [

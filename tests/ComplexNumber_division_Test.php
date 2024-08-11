@@ -24,7 +24,7 @@ final class ComplexNumber_division_Test extends TestCase
     public function testDivComplexNumbers(
         array $firstComplexNumberParams,
         array $secondComplexNumberParams,
-        int $calculatingScale,
+        $calculatingScale,
         array $expectedResFirstDivSecond,
         array $expectedResSecondDivFirst
     ) {
@@ -56,6 +56,10 @@ final class ComplexNumber_division_Test extends TestCase
         }
     }
 
+    /**
+     * It's dataProvider
+     * @return array[]
+     */
     public function getComplexNumbersParams()
     {
         return [
