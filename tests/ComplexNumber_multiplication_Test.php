@@ -48,6 +48,11 @@ final class ComplexNumber_multiplication_Test extends TestCase
         $this->assertEquals($resSecondMulFirst->getImaginary(), $resFirstMulSecond->getImaginary());
     }
 
+    /**
+     * It's dataProvider
+     *
+     * @return array[]
+     */
     public function getComplexNumbersParams(): array
     {
         return [

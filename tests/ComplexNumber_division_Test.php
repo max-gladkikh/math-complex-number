@@ -57,6 +57,11 @@ final class ComplexNumber_division_Test extends TestCase
         }
     }
 
+    /**
+     * It's dataProvider
+     *
+     * @return array[]
+     */
     public function getComplexNumbersParams(): array
     {
         return [

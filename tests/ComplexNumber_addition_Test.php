@@ -48,6 +48,11 @@ final class ComplexNumber_addition_Test extends TestCase
         $this->assertEquals($resSecondAddFirst->getImaginary(), $resFirstAddSecond->getImaginary());
     }
 
+    /**
+     * It's dataProvider
+     *
+     * @return array[]
+     */
     public function getComplexNumbersParams(): array
     {
         return [

@@ -15,7 +15,7 @@ class ComplexNumber
     private $imaginary;
     
     /**
-     * Создаём комплексное число
+     * Комплексное число
      * 
      * @param string $real      - вещественная часть числа
      * @param string $imaginary - мнимая часть числа
@@ -25,12 +25,22 @@ class ComplexNumber
         $this->real = $real;
         $this->imaginary = $imaginary;
     }
-    
+
+    /**
+     * Метод возвращает вещественную часть числа
+     *
+     * @return string
+     */
     public function getReal():string
     {
         return $this->real;
     }
-    
+
+    /**
+     * Метод возвращает мнимую часть числа
+     *
+     * @return string
+     */
     public function getImaginary():string
     {
         return $this->imaginary;

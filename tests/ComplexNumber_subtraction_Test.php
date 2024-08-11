@@ -48,6 +48,11 @@ final class ComplexNumber_subtraction_Test extends TestCase
         $this->assertEquals($expectedResSecondSubFirst['imaginary'], $resSecondSubFirst->getImaginary());
     }
 
+    /**
+     * It's dataProvider
+     *
+     * @return array[]
+     */
     public function getComplexNumbersParams(): array
     {
         return [
