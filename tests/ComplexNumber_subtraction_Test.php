@@ -1,5 +1,4 @@
-<?php 
-declare(strict_types=1);
+<?php
 
 namespace ComplexMath\Tests;
 
@@ -48,7 +47,7 @@ final class ComplexNumber_subtraction_Test extends TestCase
         $this->assertEquals($expectedResSecondSubFirst['imaginary'], $resSecondSubFirst->getImaginary());
     }
 
-    public function getComplexNumbersParams(): array
+    public function getComplexNumbersParams()
     {
         return [
             [
