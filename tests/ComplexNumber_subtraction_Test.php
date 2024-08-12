@@ -25,7 +25,7 @@ final class ComplexNumber_subtraction_Test extends TestCase
         int $calculatingScale,
         array $expectedResFirstSubSecond,
         array $expectedResSecondSubFirst
-    ) {
+    ): void {
         $complexNumberCalculator = new ComplexNumberCalculator();
         $firstComplexNumber = new ComplexNumber($firstComplexNumberParams['real'], $firstComplexNumberParams['imaginary']);
         $secondComplexNumber = new ComplexNumber($secondComplexNumberParams['real'], $secondComplexNumberParams['imaginary']);

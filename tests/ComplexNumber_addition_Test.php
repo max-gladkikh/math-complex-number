@@ -23,7 +23,7 @@ final class ComplexNumber_addition_Test extends TestCase
         array $secondComplexNumberParams,
         int $calculatingScale,
         array $expectedResFirstAddSecond
-    ) {
+    ): void {
         $complexNumberCalculator = new ComplexNumberCalculator();
         $firstComplexNumber = new ComplexNumber($firstComplexNumberParams['real'], $firstComplexNumberParams['imaginary']);
         $secondComplexNumber = new ComplexNumber($secondComplexNumberParams['real'], $secondComplexNumberParams['imaginary']);

@@ -58,8 +58,8 @@ class ComplexNumberCalculator
      */
     public function mul(ComplexNumber $first, ComplexNumber $second, int $scale = 2): ComplexNumber
     {
-        list($ac, $bd, $ad, $bc) = $this->getComplexNumberParams($first, $second, $scale);
-        
+        [$ac, $bd, $ad, $bc] = $this->getComplexNumberParams($first, $second, $scale);
+
         // $real это 'ac - bd'
         $real = bcsub($ac, $bd, $scale);
         // $imaginary это 'ad + bc'
@@ -93,7 +93,7 @@ class ComplexNumberCalculator
             throw new DivisionByZeroException();
         }
 
-        list($ac, $bd, $ad, $bc) = $this->getComplexNumberParams($first, $second, $scale);
+        [$ac, $bd, $ad, $bc] = $this->getComplexNumberParams($first, $second, $scale);
 
         //(ac + bd)
         $acADDbd = bcadd($ac, $bd, $scale);

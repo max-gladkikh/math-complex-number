@@ -23,7 +23,7 @@ final class ComplexNumber_multiplication_Test extends TestCase
         array $secondComplexNumberParams,
         int $calculatingScale,
         array $expectedResFirstMulSecond
-    ) {
+    ): void {
         $complexNumberCalculator = new ComplexNumberCalculator();
         $firstComplexNumber = new ComplexNumber($firstComplexNumberParams['real'], $firstComplexNumberParams['imaginary']);
         $secondComplexNumber = new ComplexNumber($secondComplexNumberParams['real'], $secondComplexNumberParams['imaginary']);
