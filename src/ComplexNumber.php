@@ -1,22 +1,16 @@
 <?php
 
-/*
- * Класс объект-значение комплексного числа.
- *
- * (c) Gladkikh Maksim <max.gdkh@gmail.com>
- * 
- */
-
 namespace ComplexMath;
 
+/**
+ * Объект-значение комплексного числа.
+ */
 class ComplexNumber
 {
     private $real;
     private $imaginary;
     
     /**
-     * Комплексное число
-     * 
      * @param string $real      - вещественная часть числа
      * @param string $imaginary - мнимая часть числа
      */
@@ -44,5 +38,14 @@ class ComplexNumber
     public function getImaginary()
     {
         return $this->imaginary;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString()
+    {
+        $sign = strpos($this->getImaginary(),'-') !== false ? '' : '+';
+        return sprintf('%s%s%si', $this->getReal(), $sign, $this->getImaginary());
     }
 }

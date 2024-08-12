@@ -1,16 +1,12 @@
 <?php
 
-/*
- * Класс сервис для операций с комплексными числами.
- *
- * (c) Gladkikh Maksim <max.gdkh@gmail.com>
- * 
- */
-
 namespace ComplexMath;
 
 use ComplexMath\Exception\DivisionByZeroException;
 
+/**
+ * Сервис для операций с комплексными числами
+ */
 class ComplexNumberCalculator
 {
 
