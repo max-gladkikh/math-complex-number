@@ -2,6 +2,9 @@
 
 namespace ComplexMath\Exception;
 
+/**
+ * Исключение деления на 0
+ */
 class DivisionByZeroException extends \Exception
 {
     const CODE = ExceptionCodes::DIVISION_BY_ZERO;
