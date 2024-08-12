@@ -34,6 +34,7 @@ Creating new complex number
 ``` php
 $a = new ComplexMath\ComplexNumber('1', '2');
 echo $a; // 1+2i
+
 $b = new ComplexMath\ComplexNumber('3.45', '6.789');
 echo $b; // 3.45+6.789i
 ```
@@ -42,8 +43,10 @@ Operations with complex numbers
 
 ``` php
 $calc = new ComplexMath\ComplexNumberCalculator();
+
 $c = $calc->add($a, $b);
 echo $c; // 4.45+8.78i
+
 $d = $calc->add($a, $b, 8);
 echo $d; // 4.45000000+8.78900000i
 ```
