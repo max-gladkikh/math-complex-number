@@ -16,7 +16,13 @@ $ composer config repositories.max-gladkikh vcs https://github.com/max-gladkikh/
 ### Step 2
 Adding this is library in your composer.json
 
-For php >= 7.0.0
+For php >= 7.1.0
+
+``` bash
+$ composer require "max-gladkikh/math-complex-number:v7.1.0.1"
+```
+
+Or for php >= 7.0.0
 
 ``` bash
 $ composer require "max-gladkikh/math-complex-number:v7.0.0.1"
